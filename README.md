@@ -21,6 +21,8 @@ S5: Serveren skal udstille et interface som lister alle brugerens tidligere køb
 
 S6: Serveren skal udstille et interface hvori der udstedes et ordre ID til klienten(kunden)
 				
+
+
 Klienten
 
 K1: Klienten skal udstille en log ind side som gør det muligt for brugeren at logge ind.  
