@@ -1,0 +1,49 @@
+Kommandoer:
+
+Klon projekte:
+<b> git clone </b> https://github.com/Distribuerede-Systemer-2017/LOL.git
+- Git henter nu filerne fra Github og opretter en ny mappe med samme navn som dit repository. 
+Du kan nu gå ind i mappen og arbejde på de filer, du har downloadet, og du kan også tilføje nye filer til mappen. Det her er kun lokalt.
+
+Tjek dine ændringer: 
+<b>git status</b>
+Den fortæller dig, hvilke filer der er ændret eller tilføjet i mappen i den branch, du arbejder på lige nu.
+Når du ændrer en fil, vil du med status-kommandoen se, at filen står som 'modified' med rød skrift. 
+På nuværende tidspunkt har du ikke bedt Git om at gemme ændringerne.
+
+<b>git add</b> efterfulgt af filnavnet. 
+Hvis du tilføjer mange filer samtidig, så kan du bruge kommandoen efterfulgt af et punktum. 
+Her skal man blot være forsigtig, hvis der ligger filer i mappen, som ikke skal med i projektet.
+
+
+Gem dine ændringer:
+git commit -m "", hvor citationstegnene indeholder din korte beskrivelse af, hvad det er, du har ændret med det pågældende commit.
+
+Hente opdateringer fra repository
+git pull
+henter ændringer og slå dem sammen med din lokale version i et merge. Forudsætning for man kan push i nogle tilfælde  
+
+Upload dine ændringer
+git push
+Den sender dit seneste commit til det sted, du har hentet filerne fra, så med Github vil det være på dit Github repository.
+
+
+PULL BEFORE PUSH ! 
+
+
+Branches og merge: kun lokalt!!
+
+Lav en branch 
+git branch , efterfulgt af navnet på den branch, man vil oprette. 
+Du er på nuværende tidspunkt ikke inde i den nye branch.
+
+skifte branch
+git checkout, efterfulgt af navnet på den branch, du vil skifte til. 
+Eller du kan oprette en branch og skifte til den i ét hug med kommandoen >git checkout -b efterfulgt af navnet på den nye branch.
+
+For at slå to branches sammen, skal du først skifte til den branch, du vil merge til. 
+Du skriver altså eksempelvis først >git checkout master for at skifte til master-branch. 
+Dernæst kan du bruge kommandoen >git merge efterfulgt at den branch, du vil slå sammen med master.
+
+Det kan være en god idé først at lave et merge fra master til den branch, du har arbejdet på. 
+Så kan du løse eventuelle konflikter i denne branch, før du igen merger din branch med master.
